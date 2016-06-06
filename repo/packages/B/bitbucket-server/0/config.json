@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "properties": {
-    "bitbucket-server": {
+    "bitbucketServer": {
       "properties": {
         "instances": {
           "default": 1,
@@ -16,7 +16,7 @@
         },
         "cpus": {
           "default": 1,
-          "description": "CPU shares to allocate to each bitbucket-server instance.",
+          "description": "CPU shares to allocate to each bitbucketServer instance.",
           "minimum": 1,
           "type": "number"
         },
@@ -27,7 +27,7 @@
         },
         "mem": {
           "default": 1024.0,
-          "description": "Memory (MB) to allocate to each bitbucket-server task.",
+          "description": "Memory (MB) to allocate to each bitbucketServer task.",
           "minimum": 256.0,
           "type": "number"
         },
@@ -44,13 +44,13 @@
           "type": "number"
         },
         "name": {
-          "default": "bitbucket-server",
-          "description": "Name for this bitbucket-server application",
+          "default": "bitbucketServer",
+          "description": "Name for this bitbucketServer application",
           "type": "string"
         },
         "role": {
           "default": "*",
-          "description": "Deploy bitbucket-server only on nodes with this role.",
+          "description": "Deploy bitbucketServer only on nodes with this role.",
           "type": "string"
         },
         "bridge": {
