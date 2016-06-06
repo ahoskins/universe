@@ -7,7 +7,7 @@
   "assets": {
     "container": {
       "docker": {
-        "bitbucketServer-docker": "atlassian/bitbucket-server:4.5"
+        "bitbucket-server-docker": "atlassian/bitbucket-server:4.5"
       }
     }
   }

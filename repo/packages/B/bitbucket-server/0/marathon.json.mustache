@@ -1,39 +1,39 @@
 {
-  "id": "/{{bitbucketServer.name}}",
-  "instances": {{bitbucketServer.instances}},
-  "cpus": {{bitbucketServer.cpus}},
-  "user": "{{bitbucketServer.user}}",
-  "mem": {{bitbucketServer.mem}},
+  "id": "/{{bitbucket-server.name}}",
+  "instances": {{bitbucket-server.instances}},
+  "cpus": {{bitbucket-server.cpus}},
+  "user": "{{bitbucket-server.user}}",
+  "mem": {{bitbucket-server.mem}},
   "maintainer": "support@mesosphere.io",
   "cmd": "chown -R daemon /var/atlassian/application-data/bitbucket",
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "{{resource.assets.container.docker.bitbucketServer-docker}}",
-    {{#bitbucketServer.bridge}}
+      "image": "{{resource.assets.container.docker.bitbucket-server-docker}}",
+    {{#bitbucket-server.bridge}}
       "network": "BRIDGE",    
       "portMappings": [
         { "containerPort": 7990, "hostPort": 0 },
         { "containerPort": 7999, "hostPort": 0 }
       ]
-    {{/bitbucketServer.bridge}}
-    {{^bitbucketServer.bridge}}
+    {{/bitbucket-server.bridge}}
+    {{^bitbucket-server.bridge}}
       "network": "HOST"
-    {{/bitbucketServer.bridge}}
+    {{/bitbucket-server.bridge}}
     },
     "volumes": [
     {
         "containerPath": "/var/atlassian/application-data/bitbucket",
-        "hostPath": "{{bitbucketServer.host-volume}}/{{service.name}}",
+        "hostPath": "{{bitbucket-server.host-volume}}/{{service.name}}",
         "mode": "RW"
     }
     ]
   },
   "acceptedResourceRoles": [
-    "{{bitbucketServer.role}}"
+    "{{bitbucket-server.role}}"
   ],
   "labels": {
-    "DCOS_SERVICE_NAME": "{{bitbucketServer.name}}",
+    "DCOS_SERVICE_NAME": "{{bitbucket-server.name}}",
     "DCOS_SERVICE_SCHEME": "http",
     "DCOS_SERVICE_PORT_INDEX": "0"
   }
