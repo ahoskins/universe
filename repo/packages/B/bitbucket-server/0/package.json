@@ -1,0 +1,18 @@
+{
+  "packagingVersion": "2.0",
+  "name": "bitbucket-server",
+  "version": "4.5",
+  "scm": "https://www.atlassian.com/software/bitbucket",
+  "description": "Bitbucket package",
+  "maintainer": "support@nginx.com",
+  "tags": ["git", "server"],
+  "preInstallNotes": "Preparing to install bitbucket-server.",
+  "postInstallNotes": "Bitbucket Server has been installed.",
+  "postUninstallNotes": "Bitbucket Server was uninstalled successfully.",
+  "licenses": [
+    {
+      "name": "tito",
+      "url": "http://tito.tito"
+    }
+  ]
+}
