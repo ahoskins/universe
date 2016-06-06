@@ -15,7 +15,7 @@
           "type": "string"
         },
         "cpus": {
-          "default": 1,
+          "default": 2,
           "description": "CPU shares to allocate to each bitbucket-server instance.",
           "minimum": 1,
           "type": "number"
@@ -26,7 +26,7 @@
             "default": "/tmp"
         },
         "mem": {
-          "default": 1024.0,
+          "default": 2048.0,
           "description": "Memory (MB) to allocate to each bitbucket-server task.",
           "minimum": 256.0,
           "type": "number"
