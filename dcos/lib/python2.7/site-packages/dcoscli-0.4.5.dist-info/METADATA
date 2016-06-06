@@ -1,0 +1,40 @@
+Metadata-Version: 2.0
+Name: dcoscli
+Version: 0.4.5
+Summary: DCOS Command Line Interface
+Home-page: https://github.com/mesosphere/dcos-cli
+Author: Mesosphere, Inc.
+Author-email: team@mesosphere.io
+License: UNKNOWN
+Keywords: mesos apache marathon mesosphere command datacenter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: dcos (==0.4.5)
+Requires-Dist: docopt (>=0.6,<1.0)
+Requires-Dist: futures (>=3.0,<4.0)
+Requires-Dist: pkginfo (==1.2.1)
+Requires-Dist: rollbar (>=0.9,<1.0)
+Requires-Dist: toml (>=0.9,<1.0)
+Requires-Dist: virtualenv (>=13.0,<14.0)
+
+DCOS Command Line Interface
+===========================
+The DCOS Command Line Interface (CLI) is a command line utility that
+provides a user-friendly yet powerful way to manage DCOS installations.
+
+This project is open source. Please see GitHub_ to access source code and to contribute.
+
+Full documentation is available for the DCOS CLI on the `Mesosphere docs website`_.
+
+.. _GitHub: https://github.com/mesosphere/dcos-cli
+.. _Mesosphere docs website: https://dcos.io/docs/usage/cli/
+
+
