@@ -31,6 +31,17 @@
   "acceptedResourceRoles": [
     "{{bitbucket-server.role}}"
   ],
+  "healthChecks": [
+    {
+      "protocol": "HTTP",
+      "path": "/",
+      "gracePeriodSeconds": 3,
+      "intervalSeconds": 10,
+      "portIndex": 0,
+      "timeoutSeconds": 10,
+      "maxConsecutiveFailures": 0
+    }
+  ],
   "labels": {
     "DCOS_SERVICE_NAME": "{{bitbucket-server.name}}",
     "DCOS_SERVICE_SCHEME": "http",
